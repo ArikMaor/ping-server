@@ -33,6 +33,7 @@ steps:
   new_step:
     image: alpine
     commands:
+      - echo $COOKIES
       - echo Test coverage at ${{COVERAGE}}
     on_finish:
       metadata:
